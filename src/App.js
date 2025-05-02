@@ -4,6 +4,7 @@ import './App.css'
 import ProductItem from './components/ProductItem';
 import { Provider } from 'react-redux';
 import { proStore } from './components/redux123/productStore';
+import ParentComp from './components/ParentComp';
 // import WishMessage from './components/WishMessage';
 // import { Provider } from 'react-redux';
 // import { store } from './components/redux/store';
@@ -24,9 +25,11 @@ const App = () => {
 <WishMessage/>
 </Provider> */}
 <Provider store={proStore}>
-
-     <ProductItem/>
+      <ProductItem/>
 </Provider>
+
+
+<ParentComp/>
     </Fragment>
   );
 }
